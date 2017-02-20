@@ -1,0 +1,160 @@
+* {
+	box-sizing: border-box;
+	font-family: font-family: 'Roboto Slab', serif;
+	margin: 0 auto;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	
+}
+
+.background {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e8ab55+0,e8ab55+21,e64856+36,e64856+56,482637+100,482637+100 */
+	background: #e8ab55; /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  #e8ab55 0%, #e8ab55 21%, #e64856 36%, #e64856 56%, #482637 100%, #482637 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg,  #e8ab55 0%,#e8ab55 21%,#e64856 36%,#e64856 56%,#482637 100%,#482637 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg,  #e8ab55 0%,#e8ab55 21%,#e64856 36%,#e64856 56%,#482637 100%,#482637 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8ab55', endColorstr='#482637',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+main {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+}
+
+h1 {
+	font-size: 2em;
+	color: white;
+	text-transform: uppercase;	
+	padding:20px;
+	font-family: 'Finger Paint', cursive;
+	margin: 0;
+}
+
+ul {
+	margin-bottom: 30px;
+	list-style: none;
+}
+
+li:first-child {
+	margin-left: 0;
+}
+
+li:last-child {
+	margin-right: 0;
+}
+
+li img, div img {
+	width: 100%;
+}
+
+.slider {
+	text-align: center;
+	width: 100%;
+}
+
+.slider img {
+	padding: 20px 20px 0px 20px;
+	margin-bottom: 0px;
+	width: 100%;
+}
+
+.slider img:hover {
+	cursor: pointer;
+}
+
+.controls {
+	margin: 15px auto;
+}
+
+.controls img {
+	display: inline-block;
+	text-align: center;
+	margin:0 30px 15px 0px;
+	padding: 0;	
+	vertical-align: middle;
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+.controls img:last-child {
+	margin-right: 0px
+}
+
+.circles {
+	width: 75%;
+	margin: 0 auto 15px auto;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+.circles img {
+	width: 4%;
+	margin: 0;
+	opacity: 0.5;
+	text-align: center;
+	cursor: pointer;
+}
+
+.circles img:hover {
+	opacity: 0.2;
+}
+
+.circles img:first-child {
+	margin-left: 0px;
+}
+.circles img:last-child {
+	margin-right: 0px;
+}
+
+.pause, .play {
+	width: 3%;
+}
+
+.first, .previous, .next, .last {
+	width: 4%;
+}
+
+#flexislider, .slider {
+	width: 100%;
+}
+
+@media (min-width: 800px) {
+	.first, .previous, .next, .last {
+		width: 6%;
+	}
+	.pause, .play {
+		width: 4.5%;
+	}
+}
+
+@media (min-width: 1000px) {
+	.first, .previous, .next, .last {
+		width: 8%;
+	}
+	.pause, .play {
+		width: 6%;
+	}
+}
